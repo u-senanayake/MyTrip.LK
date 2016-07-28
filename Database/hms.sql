@@ -28,12 +28,13 @@ CREATE TABLE `guide` (
   `email` varchar(50) NOT NULL,
   `contact` varchar(10) NOT NULL,
   `address` varchar(50) NOT NULL,
+  `area` varchar(20) NOT NULL,
   PRIMARY KEY (`guide_id`,`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `guide` */
 
-insert  into `guide`(`guide_id`,`nic`,`first_name`,`last_name`,`email`,`contact`,`address`) values ('G-1','931340034v','sumanapala','sirisoma','siri@gmail.com','0784561230','kandy'),('G-2','945678912v','nihal','perera','nihal@gmail.com','0784561230','galle'),('G-3','369874561v','udayanga','senarathna','supunuddeepa2@gmail.com','0112369874','nugegoda');
+insert  into `guide`(`guide_id`,`nic`,`first_name`,`last_name`,`email`,`contact`,`address`,`area`) values ('G-1','931340034v','sumanapala','sirisoma','siri@gmail.com','0784561230','kandy',''),('G-2','945678912v','nihal','perera','nihal@gmail.com','0784561230','galle',''),('G-3','369874561v','udayanga','senarathna','supunuddeepa2@gmail.com','0112369874','nugegoda','');
 
 /*Table structure for table `hotel` */
 
@@ -49,12 +50,13 @@ CREATE TABLE `hotel` (
   `email` varchar(50) NOT NULL,
   `guide` int(1) NOT NULL,
   `transport` int(1) NOT NULL,
+  `area` varchar(20) NOT NULL,
   PRIMARY KEY (`hotel_id`,`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `hotel` */
 
-insert  into `hotel`(`hotel_id`,`name`,`contact`,`address`,`latitude`,`longitude`,`email`,`guide`,`transport`) values ('H-1','galadari','0784561230','colombo10',1.582100,1.234500,'galadari@gmail.com',1,1),('H-2','cinamon','0712345678','negombo',1.582100,1.234500,'cinamon@gmail.com',0,0);
+insert  into `hotel`(`hotel_id`,`name`,`contact`,`address`,`latitude`,`longitude`,`email`,`guide`,`transport`,`area`) values ('H-1','galadari','0784561230','colombo10',1.582100,1.234500,'galadari@gmail.com',1,1,''),('H-2','cinamon','0712345678','negombo',1.582100,1.234500,'cinamon@gmail.com',0,0,'');
 
 /*Table structure for table `information` */
 
@@ -62,7 +64,7 @@ DROP TABLE IF EXISTS `information`;
 
 CREATE TABLE `information` (
   `information_id` varchar(20) NOT NULL,
-  `id` varchar(20) NOT NULL,
+  `hotel_id` varchar(20) NOT NULL,
   `info` longtext NOT NULL,
   PRIMARY KEY (`information_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -82,10 +84,32 @@ CREATE TABLE `location` (
   `duration` int(2) NOT NULL,
   `ticket` int(1) NOT NULL,
   `type` varchar(10) NOT NULL,
+  `description` longtext,
+  `area` varchar(20) NOT NULL,
   PRIMARY KEY (`location_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `location` */
+
+/*Table structure for table `package` */
+
+DROP TABLE IF EXISTS `package`;
+
+CREATE TABLE `package` (
+  `package_id` varchar(50) NOT NULL,
+  `location_id` varchar(20) NOT NULL,
+  `hotel_id` varchar(20) NOT NULL,
+  `guide_id` varchar(20) NOT NULL,
+  `transport_id` varchar(20) NOT NULL,
+  `vehicle_id` varchar(20) NOT NULL,
+  `package_budget` int(10) NOT NULL,
+  `package_duration` int(10) NOT NULL,
+  `package_rating` int(2) NOT NULL,
+  `primary_key` int(10) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`primary_key`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `package` */
 
 /*Table structure for table `pictures` */
 
@@ -124,12 +148,13 @@ CREATE TABLE `restaurant` (
   `lattitude` float(10,6) NOT NULL,
   `longitude` float(10,6) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `area` varchar(20) NOT NULL,
   PRIMARY KEY (`restaurant_id`,`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `restaurant` */
 
-insert  into `restaurant`(`restaurant_id`,`name`,`contact`,`address`,`lattitude`,`longitude`,`email`) values ('R-25','sunil','0112608198','colombo',1.235600,1.456900,'vimukthi@gmail.com'),('R-26','nihal','0111234567','perera',1.235600,1.234500,'nihal@gmail.com');
+insert  into `restaurant`(`restaurant_id`,`name`,`contact`,`address`,`lattitude`,`longitude`,`email`,`area`) values ('R-25','sunil','0112608198','colombo',1.235600,1.456900,'vimukthi@gmail.com',''),('R-26','nihal','0111234567','perera',1.235600,1.234500,'nihal@gmail.com','');
 
 /*Table structure for table `ticket` */
 
@@ -139,6 +164,8 @@ CREATE TABLE `ticket` (
   `location_id` varchar(20) NOT NULL,
   `fee` decimal(10,2) NOT NULL,
   `ticket_id` varchar(20) NOT NULL,
+  `country` int(1) NOT NULL,
+  `age` int(1) NOT NULL,
   PRIMARY KEY (`ticket_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
