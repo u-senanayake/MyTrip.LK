@@ -33,14 +33,14 @@ CREATE TABLE `guide` (
 
 /*Data for the table `guide` */
 
-insert  into `guide`(`guide_id`,`nic`,`first_name`,`last_name`,`email`,`contact`,`address`) values ('G-1','931340034v','sumanapala','sirisoma','siri@gmail.com','0784561230','kandy'),('G-2','945678912v','nihal','perera','nihal@gmail.com','0784561230','galle');
+insert  into `guide`(`guide_id`,`nic`,`first_name`,`last_name`,`email`,`contact`,`address`) values ('G-1','931340034v','sumanapala','sirisoma','siri@gmail.com','0784561230','kandy'),('G-2','945678912v','nihal','perera','nihal@gmail.com','0784561230','galle'),('G-3','369874561v','udayanga','senarathna','supunuddeepa2@gmail.com','0112369874','nugegoda');
 
 /*Table structure for table `hotel` */
 
 DROP TABLE IF EXISTS `hotel`;
 
 CREATE TABLE `hotel` (
-  `hotel_id` varchar(50) NOT NULL,
+  `hotel_id` varchar(50) NOT NULL DEFAULT 'H-1',
   `name` varchar(50) NOT NULL,
   `contact` varchar(10) NOT NULL,
   `address` varchar(50) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE `hotel` (
 
 /*Data for the table `hotel` */
 
-insert  into `hotel`(`hotel_id`,`name`,`contact`,`address`,`latitude`,`longitude`,`email`,`guide`,`transport`) values ('H-1','cinamon','0112608198','colombo10',1.654200,1.045600,'cinamon@gmail.com',1,0),('H-2','mitsubishi','0112608198','colombo',1.582100,1.025300,'v.saranga@yahoo.com',0,1),('H-3','galadari','0711790372','colombo',1.654200,1.045600,'galadari@gmail.com',1,0);
+insert  into `hotel`(`hotel_id`,`name`,`contact`,`address`,`latitude`,`longitude`,`email`,`guide`,`transport`) values ('H-1','galadari','0784561230','colombo10',1.582100,1.234500,'galadari@gmail.com',1,1),('H-2','cinamon','0712345678','negombo',1.582100,1.234500,'cinamon@gmail.com',0,0);
 
 /*Table structure for table `information` */
 
@@ -117,7 +117,7 @@ CREATE TABLE `rating` (
 DROP TABLE IF EXISTS `restaurant`;
 
 CREATE TABLE `restaurant` (
-  `restaurant_id` varchar(20) NOT NULL,
+  `restaurant_id` varchar(20) NOT NULL DEFAULT 'R-1',
   `name` varchar(50) NOT NULL,
   `contact` varchar(10) NOT NULL,
   `address` varchar(50) NOT NULL,
@@ -129,7 +129,7 @@ CREATE TABLE `restaurant` (
 
 /*Data for the table `restaurant` */
 
-insert  into `restaurant`(`restaurant_id`,`name`,`contact`,`address`,`lattitude`,`longitude`,`email`) values ('R-3','perera and sons','0112619927','moratuwa',1.324500,1.456800,'p&amp;s@gmail.com'),('R-4','bakers','0112345678','negombo',1.657800,1.234500,'bakers@hotmail.com');
+insert  into `restaurant`(`restaurant_id`,`name`,`contact`,`address`,`lattitude`,`longitude`,`email`) values ('R-25','sunil','0112608198','colombo',1.235600,1.456900,'vimukthi@gmail.com'),('R-26','nihal','0111234567','perera',1.235600,1.234500,'nihal@gmail.com');
 
 /*Table structure for table `ticket` */
 
@@ -159,7 +159,7 @@ CREATE TABLE `transport` (
 
 /*Data for the table `transport` */
 
-insert  into `transport`(`transport_id`,`name`,`contact`,`address`,`email`) values ('C-1','sls cabs','7894561230','piliyandala','sls@yahoo.com'),('C-2','rbc cabs','7845698201','nugegoda','rbc@yahoo.com');
+insert  into `transport`(`transport_id`,`name`,`contact`,`address`,`email`) values ('C-1','sls cabs','7894561230','piliyandala','sls@yahoo.com'),('C-2','rbc cabs','7845698201','nugegoda','rbc@yahoo.com'),('C-3','hms','0441234560','matara','hms@gmail.com');
 
 /*Table structure for table `traveller` */
 
@@ -171,12 +171,14 @@ CREATE TABLE `traveller` (
   `last_name` varchar(30) NOT NULL,
   `country` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `contact` int(10) NOT NULL,
+  `contact` varchar(10) NOT NULL,
   `traveller_id` varchar(20) NOT NULL,
   PRIMARY KEY (`email`,`traveller_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `traveller` */
+
+insert  into `traveller`(`nic`,`first_name`,`last_name`,`country`,`email`,`contact`,`traveller_id`) values ('914567891v','buddika','alwis','America','alwissaranga@yahoo.com','2147483647','T-3'),('987456123','kasun','tharindu','America','kasun@gmail.com','0114567893','T-6'),('904561234v','udayanga','senarathna','Australia','udayanag@gmail.com','0115647892','T-5'),('931340034v','vimukthi','saranga','Sri Lanka','v.saranga@yahoo.com','0711790372','T-4');
 
 /*Table structure for table `user` */
 
