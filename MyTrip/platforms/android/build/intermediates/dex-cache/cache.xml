@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/udayanga/events/code_fest/MyTripLK/MyTrip/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="e42d247c833375568ff2f1307278476466453b7d">
+        <dex dex="/home/udayanga/events/code_fest/MyTripLK/MyTrip/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_28157db1334efd7bf887510b77de936a9f6480d5.jar" />
+    </item>
+    <item
+        jar="/home/udayanga/events/code_fest/MyTrip/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4bc253dda67044baaf8445dbdde60918637bc1c6">
+        <dex dex="/home/udayanga/events/code_fest/MyTrip/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_e092e7b356b2b975ef78b90b597768fb057d477e.jar" />
+    </item>
+
+</items>

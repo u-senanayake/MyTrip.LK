@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/udayanga/events/code_fest/MyTrip/platforms/android/build/intermediates/res/merged/debug/drawable-port-hdpi-v4/screen.png",
+        "source": "/home/udayanga/events/code_fest/MyTrip/platforms/android/res/drawable-port-hdpi/screen.png"
+    },
+    {
+        "merged": "/home/udayanga/events/code_fest/MyTripLK/MyTrip/platforms/android/build/intermediates/res/merged/debug/drawable-port-hdpi-v4/screen.png",
+        "source": "/home/udayanga/events/code_fest/MyTripLK/MyTrip/platforms/android/res/drawable-port-hdpi/screen.png"
+    }
+]

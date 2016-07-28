@@ -1,0 +1,10 @@
+.main_div{
+    background-color:  #adebad;
+    padding: 20px;
+    height: 1000px;
+}
+.form{
+    background-color:  #99e699;
+    height: 100%;
+    padding: 10px;
+}
