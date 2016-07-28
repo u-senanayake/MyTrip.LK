@@ -21,7 +21,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Custom Theme files -->
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<link href="css/model.css" rel="stylesheet" type="text/css">
 <!--animate-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/wow.min.js"></script>
@@ -29,22 +28,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 new WOW().init();
 	</script>
 <!--//end-animate-->
-    
-    
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <style>
-  .modal-header, h4, .close {
-      background-color: #5cb85c;
-      color:white !important;http://www.w3schools.com/images/stack_vertically.png
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-footer {
-      background-color: #f9f9f9;
-  }
-  </style>
 </head>
 <body>
 <!-- top-header -->
@@ -68,13 +51,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="header">
 	<div class="container">
 		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.html">MyTrip.<span>lk</span></a>	
+			<a href="index.html">Green <span>Wheels</span></a>	
 		</div>
 		<div class="bus wow fadeInUp animated" data-wow-delay=".5s">
-            <a href="index.html" class="buses active">TRANSPORT SERVICES</a>
+            <a href="index.html" class="buses active">BUSES</a>
             <a href="hotels.html">HOTELS</a>
-            <a href="hotels.html">RESTURENTS</a>
-            <a href="hotels.html">GUID PERSONS</a>
         </div>
 		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 
 			<li><i class="fa fa-lock"></i></li>
@@ -104,11 +85,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<nav class="cl-effect-1">
 						<ul class="nav navbar-nav">
 							<li><a href="about.html">About</a></li>
+								<li><a href="faq.html">Faq</a></li>
+								<li><a href="apps.html">Apps</a></li>
+								<li><a href="blog.html">Blog</a></li>
 								<li><a href="travels.html">Travels</a></li>
 								<li><a href="privacy.html">Privacy Policy</a></li>
 								<li><a href="agent.html">Agent Registration</a></li>
+								<li><a href="terms.html">Terms of Use</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
-								<li><a href="#" data-toggle="modal" data-target="#myModal3"> Need Help?/ Write Us </a>  </li>
+								<li>Need Help?<a href="#" data-toggle="modal" data-target="#myModal3"> / Write Us </a>  </li>
 								<div class="clearfix"></div>
 						</ul>
 					</nav>
@@ -123,36 +108,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--- banner ---->
 <div class="banner-2 ">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green My Trip.LK - Best way to manage your journey</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel & Hotels</h1>
 	</div>
 </div>
 <div class="container">
-   
-    <!-- Trigger/Open The Modal -->
-
-
-    <!-- The bocking  Modal -->
-    
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">×</span>
-          <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div>
-      </div>
-
-    </div>
-    
-    
 	<div class="col-md-5 bann-info1 wow fadeInLeft animated" data-wow-delay=".5s">
 		<i class="fa fa-columns"></i>
 		<h3>WORLD'S MOST TRAVEL BRAND</h3>
@@ -165,30 +124,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input class="city" type="text" value="Enter the most you can spend" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a city';}" required=>
 			</div>
 			<div class="bnr-left">
-                <label class="inputLabel">Travel type</label>
-				<div class="checkbox">
-                    <label><input type="checkbox" value="">Safari</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Relax at Beaches</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Hiking</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Show all</label>
-                </div>
-
+				<label class="inputLabel">Adventure type</label>
+				<input class="city" list="adventure" value="What kind of an adventure?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a city';}" required="">
+					<datalist id="adventure">
+					    <option value="Safari">
+					    <option value="Relax at Beaches">
+					    <option value="Hiking">
+					</datalist> 
 			</div>
 				<div class="clearfix"></div>
 		</div>
 		<div class="ban-bottom">
 			<div class="bnr-right">
-				<label class="inputLabel">Check In</label>
+				<label class="inputLabel">Date of Journey</label>
 				<input class="date" id="datepicker" type="text" value="dd-mm-yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'dd-mm-yyyy';}" required=>
 			</div>
 			<div class="bnr-right">
-				<label class="inputLabel">Check Out</label>
+				<label class="inputLabel">Date of Return<span class="opt">&nbsp;(Optional)</span></label>
 				<input class="date" id="datepicker1" type="text" value="dd-mm-yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'dd-mm-yyyy';}" required=>
 			</div>
 				<div class="clearfix"></div>
@@ -203,56 +155,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!---/End-date-piker---->
 		</div>
 		<div class="sear">
-<!--			<form action="bus.html">-->
-				<button id="myBtn" class="seabtn">Search Packages</button>
-                
-<!--			</form>-->
-
-            <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+			<form action="bus.html">
+				<button class="seabtn">Search Packages</button>
+			</form>
+		</div>
 	</div>
 	<div class="clearfix"></div>
 </div>
@@ -558,10 +464,10 @@ window.onclick = function(event) {
 										</ul>
 									</div>
 									<div class="login-right">
-										<form action="" me>
+										<form>
 											<h3>Signin with your account </h3>
-											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="" name="email">	
-											<input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											<h4><a href="#">Forgot password</a></h4>
 											<div class="single-bottom">
 												<input type="checkbox" id="brand" value="">

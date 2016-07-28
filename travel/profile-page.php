@@ -4,10 +4,15 @@ Author URL: http://azeemullah.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<?php
+if(!isset($_SESSION[''])){
+	session_start();
+}
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Green Wheels | Hotel Registration</title>
+<title>Green Wheels | <?php  ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel, Sri Lanka, Journey, Adventure" />
