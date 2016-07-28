@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Green Wheels | Home</title>
+<title>Green Wheels | Hotel Registration</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel, Sri Lanka, Journey, Adventure" />
@@ -33,12 +33,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- top-header -->
 <div class="top-header">
 	<div class="container">
-		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
+		<ul class="tp-hd-lft wow ">
 			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
 			<li class="prnt"><a href="javascript:window.print()">Print/SMS Ticket</a></li>
 				
 		</ul>
-		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
+		<ul class="tp-hd-rgt wow "> 
 			<li class="tol">Toll Number : 123-4568790</li>				
 			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Sign Up</a></li> 
 			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Sign In</a></li>
@@ -50,7 +50,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--- header ---->
 <div class="header">
 	<div class="container">
-		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
+		<div class="logo wow ">
 			<a href="index.html">Green <span>Wheels</span></a>	
 		</div>
 		<div class="bus wow fadeInUp animated" data-wow-delay=".5s">
@@ -67,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!--- /header ---->
 <!--- footer-btm ---->
-<div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s">
+<div class="footer-btm wow ">
 	<div class="container">
 	<div class="navigation">
 			<nav class="navbar navbar-default">
@@ -106,247 +106,51 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!--- /footer-btm ---->
 <!--- banner ---->
-<div class="banner-2 ">
+<div class="banner-3 ">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel & Hotels</h1>
+		<h1 class="wow "> Green Wheels - Best in Class for Travel & Hotels</h1>
 	</div>
 </div>
-<div class="container">
-	<div class="col-md-5 bann-info1 wow fadeInLeft animated" data-wow-delay=".5s">
-		<i class="fa fa-columns"></i>
-		<h3>WORLD'S MOST TRAVEL BRAND</h3>
-	</div>
-	<div class="col-md-7 bann-info wow fadeInRight animated" data-wow-delay=".5s">
-		<h2>Search for the best Adventure that suits you</h2>
-		<div class="ban-top">
-			<div class="bnr-left">
-            <form action="src/packages.php" method="post">
-				<label class="inputLabel">Budget</label>
-				<input name="budget" class="city" type="text" value="Enter the most you can spend" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a city';}" required=>
+<div class="details">
+	<div class="container">
+		<div class="details-top">
+			<div class="col-md-4 details-left ">
+				<h3>Location</h3>
+				<a href="#" data-toggle="modal" data-target="#locationer"><img src="images/c5.jpg" class="img-responsive" alt=""></a>
 			</div>
-			<div class="bnr-left">
-				<label class="inputLabel">Adventure type</label>
-				<input name="type" class="city" list="adventure" value="What kind of an adventure?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a city';}" required="">
+			<div class="col-md-4 details-left wow">
+				<h3>Hotel</h3>
+				<img src="images/c5.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-md-4 details-left wow">
+				<h3>Guide</h3>
+				<img src="images/c5.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-md-4 details-left wow">
+				<h3>Duration of stay</h3>
+				<input class="city" type="text" value="2" onfocus="this.value = '';" required="required">
+			</div>
+			<div class="col-md-4 details-left wow">
+				<h3>Transport type</h3>
+				<input class="transport" list="adventure" value="Transport"  required="">
 					<datalist id="adventure">
-					    <option value="Safari"></option>
-					    <option value="Relax at Beaches"></option>
-					    <option value="Hiking"></option>
+					    <option value="Bus">
+					    <option value="Van">
+					    <option value="None">
 					</datalist> 
 			</div>
-				<div class="clearfix"></div>
-		</div>
-		<div class="ban-bottom">
-			<div class="bnr-right">
-				<label class="inputLabel">Date of Journey</label>
-				<input name="d1" class="date" id="datepicker" type="text" value="dd-mm-yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'dd-mm-yyyy';}" required=>
-			</div>
-			<div class="bnr-right">
-				<label class="inputLabel">Date of Return<span class="opt">&nbsp;(Optional)</span></label>
-				<input name="d2" class="date" id="datepicker1" type="text" value="dd-mm-yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'dd-mm-yyyy';}" required=>
-			</div>
-				<div class="clearfix"></div>
-				<!---start-date-piker---->
-				<link rel="stylesheet" href="css/jquery-ui.css" />
-				<script src="js/jquery-ui.js"></script>
-					<script>
-						$(function() {
-						$( "#datepicker,#datepicker1" ).datepicker();
-						});
-					</script>
-			<!---/End-date-piker---->
-		</div>
-		<div class="sear">
-				<button name="submit" type="submit" class="seabtn">Search Packages</button>
-			</form>
-		</div>
-	</div>
-	<div class="clearfix"></div>
-</div>
-<!--- /banner ---->
-<!--- rupes ---->
-<div class="container">
-	<div class="rupes">
-		<div class="col-md-4 rupes-left wow fadeInLeft animated" data-wow-delay=".5s">
-			<div class="rup-left">
-				<a href="offers.html"><i class="fa fa-usd"></i></a>
-			</div>
-			<div class="rup-rgt">
-				<h3>UP TO USD. 50 OFF</h3>
-				<h4><a href="offers.html">TRAVEL SMART</a></h4>
-				<p>CODE:YBMAR12<br>Book Using Pay Money</p>
-			</div>
-				<div class="clearfix"></div>
-		</div>
-		<div class="col-md-4 rupes-left wow fadeInUp animated" data-wow-delay=".5s">
-			<div class="rup-left">
-				<a href="offers.html"><i class="fa fa-h-square"></i></a>
-			</div>
-			<div class="rup-rgt">
-				<h3>UP TO 70% OFF</h3>
-				<h4><a href="offers.html">ON HOTELS ACROSS WORLD</a></h4>
-				<p>Offer CODE:YBMAR12</p>
-			</div>
-				<div class="clearfix"></div>
-		</div>
-		<div class="col-md-4 rupes-left wow fadeInRight animated" data-wow-delay=".5s">
-			<div class="rup-left">
-				<a href="offers.html"><i class="fa fa-mobile"></i></a>
-			</div>
-			<div class="rup-rgt">
-				<h3>FLAT USD. 50 OFF</h3>
-				<h4><a href="offers.html">BUS APP OFFER</a></h4>
-				<p>book via the yellow Bus App<br>CODE:YBMAR12</p>
-			</div>
-				<div class="clearfix"></div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!--- /rupes ---->
-<!--- hotels-top ---->
-<div class="hotels-top">
-	<div class="container">
-		<h3>Hotel Rooms</h3>
-		<div class="col-md-6 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-			<a href="siglepage.html">
-					<div class="view1 view1-sixth">
-						<img src="images/h5.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Residence Inn Deptford</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-		<div class="col-md-6 hotels-right wow fadeInRight animated" data-wow-delay=".5s">
-			<a href="siglepage.html">
-					<div class="view1 view1-sixth">
-						<img src="images/h1.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Residence Inn Deptford</h2>
-							</div>
-					</div>
-				</a>
-		</div>
-			<div class="clearfix"></div>
-		<div class="hotl-top">
-			<div class="col-md-4 hotels-left wow fadeInLeft animated" data-wow-delay=".5s">
-				<a href="siglepage.html">
-					<div class="view1 view1-sixth">
-						<img src="images/h3.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Residence Inn Deptford</h2>
-							</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-4 hotels-left wow fadeInUp animated" data-wow-delay=".5s">
-				<a href="siglepage.html">
-					<div class="view1 view1-sixth">
-						<img src="images/h2.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Residence Inn Deptford</h2>
-							</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-4 hotels-left wow fadeInRight animated" data-wow-delay=".5s">
-				<a href="siglepage.html">
-					<div class="view1 view1-sixth">
-						<img src="images/h4.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Residence Inn Deptford</h2>
-							</div>
-					</div>
-				</a>
+			<div class="col-md-4 details-left wow">
+				<h3>Cost</h3>
+				<h5>USD 700</h5>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
 </div>
-<!--- /hotels-top ---->
-<!--- hotels-top ---->
-<div class="hotels-top">
-	<div class="container">
-	<h3>Touring Cities</h3>
-		<div class="col-md-4 hotels-left wow fadeInLeft animated" data-wow-delay=".5s">
-			<a href="details.html"><div class="view1 view1-sixth">
-				<img src="images/c4.jpg" class="img-responsive" alt="">
-				<div class="mask">
-                    <h2>Paterson Great Falls</h2>
-                </div>
-			</div>
-			</a>
-		</div>
-		<div class="col-md-4 hotels-left wow fadeInUp animated" data-wow-delay=".5s">
-			<a href="details.html">
-				<div class="view1 view1-sixth">
-					<img src="images/c5.jpg" class="img-responsive" alt="">
-						<div class="mask">
-							<h2>Paterson Great Falls</h2>
-						</div>
-				</div>
-			</a>
-		</div>
-		<div class="col-md-4 hotels-left wow fadeInRight animated" data-wow-delay=".5s">
-			<a href="details.html">
-				<div class="view1 view1-sixth">
-					<img src="images/c3.jpg" class="img-responsive" alt="">
-						<div class="mask">
-							<h2>Paterson Great Falls</h2>
-						</div>
-				</div>
-			</a>
-		</div>
-			<div class="clearfix"></div>
-		<div class="hotl-top">
-			<div class="col-md-6 hotels-right wow fadeInLeft animated" data-wow-delay=".5s">
-				<a href="details.html">
-					<div class="view1 view1-sixth">
-						<img src="images/c1.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Paterson Great Falls</h2>
-							</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-6 hotels-right portfolio-item slideanim slide wow fadeInRight animated" data-wow-delay=".5s">
-				<a href="details.html">
-					<div class="view1 view1-sixth">
-						<img src="images/c2.jpg" class="img-responsive" alt="">
-							<div class="mask">
-								<h2>Paterson Great Falls</h2>
-							</div>
-					</div>
-				</a>
-			</div>
-				<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!--- /hotels-top ---->
-<!--- routes ---->
-<div class="routes">
-	<div class="container">
-		<div class="col-md-4 hotes-left wow fadeInRight animated" data-wow-delay=".5s">
-			<h3>50,000 +</h3>
-			<p>Cities with Hotels</p>
-		</div>
-		<div class="col-md-4 hotes-left wow fadeInUp animated" data-wow-delay=".5s">
-			<h3>19,000 +</h3>
-			<p>Happy Customers</p>
-		</div>
-		<div class="col-md-4 hotes-left wow fadeInRight animated" data-wow-delay=".5s">
-			<h3>70,000+</h3>
-			<p>Hotel Across World</p>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!--- /routes ---->
 <!--- footer-top ---->
 <div class="footer-top">
 	<div class="container">
-		<div class="col-md-6 footer-left wow fadeInLeft animated" data-wow-delay=".5s">
+		<div class="col-md-6 footer-left wow">
 			<h3>Journey through</h3>
 				<ul>
 					<li><a href="index.html">Mahiyangana</a></li>
@@ -367,7 +171,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="clearfix"></div>
 				</ul>
 		</div>
-		<div class="col-md-6 footer-left wow fadeInRight animated" data-wow-delay=".5s">
+		<div class="col-md-6 footer-left wow ">
 			<h3>Guides found in</h3>
 				<ul>
 					<li><a href="index.html">Mahiyangana</a></li>
@@ -396,7 +200,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="copy-right">
 	<div class="container">
 	
-		<div class="footer-social-icons wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
+		<div class="footer-social-icons wow " style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">
 			<ul>
 				<li><a class="facebook" href="#"><span>Facebook</span></a></li>
 				<li><a class="twitter" href="#"><span>Twitter</span></a></li>
@@ -404,7 +208,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Green Wheels . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
+		<p class="wow zoomIn  " style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Green Wheels . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
 	</div>
 </div>
 <!--- /copy-right ---->
@@ -540,6 +344,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 			</div>
+<!-- Modal-1 -->
+  <div class="modal fade" id="locationer" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+        <div class="container">	
+
+        <h2 style="text-align: center; padding-bottom: 30px">Please Select a location</h2>
+          <div class="col-md-3">
+			<h3>Hikkaduwa</h3>
+			<img src="images/c5.jpg" class="img-responsive" alt="">
+		  </div>
+          <div class="col-md-3">
+			<h3>Trinco</h3>
+			<img src="images/c5.jpg" class="img-responsive" alt="">
+		  </div>
+          <div class="col-md-3">
+			<h3>Arugambay</h3>
+			<img src="images/c5.jpg" class="img-responsive" alt="">
+		  </div>
+          <div class="col-md-3">
+			<h3>Unawatuna</h3>
+			<img src="images/c5.jpg" class="img-responsive" alt="">
+		  </div>
+		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- //Modal -1 -->
 <!-- //write us -->
 </body>
 </html>
