@@ -34,7 +34,7 @@ CREATE TABLE `guide` (
 
 /*Data for the table `guide` */
 
-insert  into `guide`(`guide_id`,`nic`,`first_name`,`last_name`,`email`,`contact`,`address`,`area`) values ('G-1','931340034v','sumanapala','sirisoma','siri@gmail.com','0784561230','kandy',''),('G-2','945678912v','nihal','perera','nihal@gmail.com','0784561230','galle',''),('G-3','369874561v','udayanga','senarathna','supunuddeepa2@gmail.com','0112369874','nugegoda','');
+insert  into `guide`(`guide_id`,`nic`,`first_name`,`last_name`,`email`,`contact`,`address`,`area`) values ('G-1','789456123v','rajitha','senarathna','admin@esoft.lk','0784561230','gampaha','gampaha');
 
 /*Table structure for table `hotel` */
 
@@ -56,7 +56,7 @@ CREATE TABLE `hotel` (
 
 /*Data for the table `hotel` */
 
-insert  into `hotel`(`hotel_id`,`name`,`contact`,`address`,`latitude`,`longitude`,`email`,`guide`,`transport`,`area`) values ('H-1','galadari','0784561230','colombo10',1.582100,1.234500,'galadari@gmail.com',1,1,''),('H-2','cinamon','0712345678','negombo',1.582100,1.234500,'cinamon@gmail.com',0,0,'');
+insert  into `hotel`(`hotel_id`,`name`,`contact`,`address`,`latitude`,`longitude`,`email`,`guide`,`transport`,`area`) values ('H-1','asdf','01123456','sasbj',1.230000,1.250000,'ksaak',1,0,'kottawa'),('H-2','mitsubishi','0784561230','kottawa',1.324500,1.045600,'wb@gmail.com',0,1,'kottawa');
 
 /*Table structure for table `information` */
 
@@ -91,6 +91,8 @@ CREATE TABLE `location` (
 
 /*Data for the table `location` */
 
+insert  into `location`(`location_id`,`name`,`lattitude`,`longitude`,`guide`,`duration`,`ticket`,`type`,`description`,`area`) values ('L-1','gale fort',1.123450,1.235600,0,1,1,'safari','best','galle'),('L-2','unawatuna',1.234500,1.236500,1,0,1,'beach','good','galle'),('L-3','trincomalee',1.234500,1.235600,0,1,1,'beach','better','trinco');
+
 /*Table structure for table `package` */
 
 DROP TABLE IF EXISTS `package`;
@@ -107,9 +109,11 @@ CREATE TABLE `package` (
   `package_rating` int(2) NOT NULL,
   `primary_key` int(10) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`primary_key`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 /*Data for the table `package` */
+
+insert  into `package`(`package_id`,`location_id`,`hotel_id`,`guide_id`,`transport_id`,`vehicle_id`,`package_budget`,`package_duration`,`package_rating`,`primary_key`) values ('Galle Tour','L-1','H-1','G-1','C-1','V-1',9000,3,6,1),('Galle Tour','L-2','H-2','G-2','C-2','V-2',9000,3,6,2),('Trinco','L-3','H-3','G-3','C-3','V-3',8000,2,7,3);
 
 /*Table structure for table `pictures` */
 
@@ -154,7 +158,7 @@ CREATE TABLE `restaurant` (
 
 /*Data for the table `restaurant` */
 
-insert  into `restaurant`(`restaurant_id`,`name`,`contact`,`address`,`lattitude`,`longitude`,`email`,`area`) values ('R-25','sunil','0112608198','colombo',1.235600,1.456900,'vimukthi@gmail.com',''),('R-26','nihal','0111234567','perera',1.235600,1.234500,'nihal@gmail.com','');
+insert  into `restaurant`(`restaurant_id`,`name`,`contact`,`address`,`lattitude`,`longitude`,`email`,`area`) values ('R-1','galadari','119','kottawa',1.235600,1.025300,'r@gmail.com','colombo');
 
 /*Table structure for table `ticket` */
 
@@ -186,7 +190,7 @@ CREATE TABLE `transport` (
 
 /*Data for the table `transport` */
 
-insert  into `transport`(`transport_id`,`name`,`contact`,`address`,`email`) values ('C-1','sls cabs','7894561230','piliyandala','sls@yahoo.com'),('C-2','rbc cabs','7845698201','nugegoda','rbc@yahoo.com'),('C-3','hms','0441234560','matara','hms@gmail.com');
+insert  into `transport`(`transport_id`,`name`,`contact`,`address`,`email`) values ('C-1','sls cabs','7894561230','piliyandala','sls@yahoo.com'),('C-2','rcb cabs','0456789456','nugegoda','g@gmail.com');
 
 /*Table structure for table `traveller` */
 
@@ -205,7 +209,7 @@ CREATE TABLE `traveller` (
 
 /*Data for the table `traveller` */
 
-insert  into `traveller`(`nic`,`first_name`,`last_name`,`country`,`email`,`contact`,`traveller_id`) values ('914567891v','buddika','alwis','America','alwissaranga@yahoo.com','2147483647','T-3'),('987456123','kasun','tharindu','America','kasun@gmail.com','0114567893','T-6'),('904561234v','udayanga','senarathna','Australia','udayanag@gmail.com','0115647892','T-5'),('931340034v','vimukthi','saranga','Sri Lanka','v.saranga@yahoo.com','0711790372','T-4');
+insert  into `traveller`(`nic`,`first_name`,`last_name`,`country`,`email`,`contact`,`traveller_id`) values ('914567891v','buddika','alwis','America','alwissaranga@yahoo.com','2147483647','T-3'),('987456123','kasun','tharindu','America','kasun@gmail.com','0114567893','T-6'),('904561234v','somapala','sumanasiri','srilanka','supun@striking.lk','0111234567','T-7'),('904561234v','udayanga','senarathna','Australia','udayanag@gmail.com','0115647892','T-5'),('931340034v','vimukthi','saranga','Sri Lanka','v.saranga@yahoo.com','0711790372','T-4');
 
 /*Table structure for table `user` */
 
@@ -214,10 +218,13 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
+  `type` varchar(10) NOT NULL,
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `user` */
+
+insert  into `user`(`email`,`password`,`type`) values ('admin@esoft.lk','145','guide'),('g@gmail.com','456','transport'),('r@gmail.com','145','restaurant'),('supun@striking.lk','Password',''),('v.saranga@yahoo.com','0112608198',''),('wb@gmail.com','789','hotel');
 
 /*Table structure for table `vehicle` */
 
