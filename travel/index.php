@@ -126,12 +126,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="bnr-left">
 				<label class="inputLabel">Adventure type</label>
-				<input name="type" class="city" list="adventure" value="What kind of an adventure?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a city';}" required="">
-					<datalist id="adventure">
-					    <option value="Safari"></option>
-					    <option value="Relax at Beaches"></option>
-					    <option value="Hiking"></option>
-					</datalist> 
+                <select name="select2[]" size="1" multiple="multiple" tabindex="1">
+                    <option value="Adventure">Adventure</option>
+                    <option value="Beach">Beach</option>
+                    <option value="Relax">Relax</option>
+                    <option value="Religous">Religous</option>
+                    <option value="Heritage">Heritage</option>
+                    <option value="Forest Life">Forest Life</option>
+                    <option value="Safari">Safari</option>
+                    <option value="City Tour">City Tour</option>
+                    <option value="Hiking">Hiking</option>
+              </select>
 			</div>
 				<div class="clearfix"></div>
 		</div>
