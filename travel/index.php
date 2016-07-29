@@ -432,13 +432,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												</ul>
 											</div>
 											<div class="login-right">
-												<form>
+												<form action="src/traveller_registration.php" method="post">
 													<h3>Create your account </h3>
-													<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-													<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-													<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-													<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-													<input type="submit" value="CREATE ACCOUNT">
+													<input name="fname" type="text" value="First Name" >
+                                                    <input name="lname" type="text" value="Last Name" >
+                                                    <input name="nic" type="text" value="NIC/PASSPORT" >
+													<input name="contact" type="text" value="Mobile number" >
+                                                    <input name="country" type="text" value="Country" >
+													<input name="email" type="text" value="Email id" >	
+													<input name="password" type="password" value="Password" >	
+													<input name="btn" id="btn" type="submit" value="REGISTER">
 												</form>
 											</div>
 												<div class="clearfix"></div>								
@@ -469,16 +472,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										</ul>
 									</div>
 									<div class="login-right">
-										<form>
+										<form action="src/login_process.php" method="post">
 											<h3>Signin with your account </h3>
-											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<input name="email" type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
+											<input name="password" type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
 											<h4><a href="#">Forgot password</a></h4>
 											<div class="single-bottom">
 												<input type="checkbox" id="brand" value="">
 												<label for="brand"><span></span>Remember Me.</label>
 											</div>
-											<input type="submit" value="SIGNIN">
+											<input name="login" id="login" type="submit" value="SIGNIN">
 										</form>
 									</div>
 									<div class="clearfix"></div>								

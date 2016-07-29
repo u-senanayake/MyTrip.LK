@@ -123,6 +123,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="text" placeholder="NIC" name="nic">
 				<input type="text" placeholder="Address" name="address">
 				<input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Password" name="password">
+                <input type="text" placeholder="Area" name="area">
 				<input type="text" placeholder="Phone Number" name="contact">
 				<div class="sub">
 					<input type="submit" value="Submit" name="btn">

@@ -10,6 +10,8 @@ if(isset($_POST['btn'])){
 	$email = mysqli_real_escape_string($con,htmlspecialchars($_POST['email']));
 	$address = mysqli_real_escape_string($con,htmlspecialchars($_POST['address']));
 	$contact = mysqli_real_escape_string($con,htmlspecialchars($_POST['contact']));
+	$area = mysqli_real_escape_string($con,htmlspecialchars($_POST['area']));
+	$password = mysqli_real_escape_string($con,htmlspecialchars($_POST['password']));
 	$result = mysqli_query($con,"SELECT MAX(guide_id) as count FROM guide");
 	if(mysqli_num_rows($result) > 0){
 		while($row = mysqli_fetch_array($result)){
@@ -21,9 +23,10 @@ if(isset($_POST['btn'])){
 	$value = split('G-',$restID);
 	$num = $value[1] + 1;
 	$guideId = 'G-'.$num;
-	$query = "INSERT INTO guide VALUES ('".$guideId."','".$nic."','".$fname."','".$lname."','".$email."','".$contact."','".$address."')";
-	if(mysqli_query($con, $query)){
-		echo 'done';
+	$query = "INSERT INTO guide VALUES ('".$guideId."','".$nic."','".$fname."','".$lname."','".$email."','".$contact."','".$address."','".$area."')";
+	$query2 = "INSERT INTO user VALUES ('".$email."','".$password."','guide')";
+	if(mysqli_query($con, $query) && mysqli_query($con, $query2)){
+		header('Location:../profile-page.php');
 	} else {
 		echo mysqli_error($con);	
 	}

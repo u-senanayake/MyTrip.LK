@@ -120,6 +120,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="text" placeholder="Address" name="address">
 				<input type="text" placeholder="Email" name="email">
 				<input type="text" placeholder="Phone Number" name="contact">
+                <input type="text" placeholder="Password" name="password">
+                <input type="text" placeholder="Area" name="area">
 				<p style="margin: 1em 0 0"><strong>Location</strong></p>
 				<input type="text" placeholder="Longitude" name="lon">
 				<input type="text" placeholder="Lattitude" name="lat">

@@ -119,6 +119,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="text" placeholder="Name" name="name">
 				<input type="text" placeholder="Address" name="address">
 				<input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Area" name="area">
+                <input type="text" placeholder="Password" name="password">
 				<input type="text" placeholder="Phone Number" name="contact">
 				<p style="margin: 1em 0 0"><strong>Location</strong></p>
 				<input type="text" placeholder="Longitude" name="lon">

@@ -10,6 +10,8 @@ if(isset($_POST['btn'])){
 	$contact = mysqli_real_escape_string($con,htmlspecialchars($_POST['contact']));
 	$lon = mysqli_real_escape_string($con,htmlspecialchars($_POST['lon']));
 	$lat = mysqli_real_escape_string($con,htmlspecialchars($_POST['lat']));
+	$area = mysqli_real_escape_string($con,htmlspecialchars($_POST['area']));
+	$password = mysqli_real_escape_string($con,htmlspecialchars($_POST['password']));
 	$transport = mysqli_real_escape_string($con,htmlspecialchars($_POST['transport']));
 	$guide = mysqli_real_escape_string($con,htmlspecialchars($_POST['guide']));
 	$result = mysqli_query($con,"SELECT MAX(hotel_id) as count FROM hotel");
@@ -23,9 +25,11 @@ if(isset($_POST['btn'])){
 	$value = split('H-',$restID);
 	$num = $value[1] + 1;
 	$hotelId = 'H-'.$num;
-	$query = "INSERT INTO hotel VALUES ('".$hotelId."','".$name."','".$contact."','".$address."','".$lat."','".$lon."','".$email."','".$guide."','".$transport."')";
-	if(mysqli_query($con, $query)){
-		echo 'done';
+	$query = "INSERT INTO hotel VALUES ('".$hotelId."','".$name."','".$contact."','".$address."','".$lat."','".$lon."','".$email."','".$guide."',
+	'".$transport."','".$area."')";
+	$query2 = "INSERT INTO user VALUES ('".$email."','".$password."','hotel')";
+	if(mysqli_query($con, $query) && mysqli_query($con, $query2)){
+		header('Location:../profile-page.php');
 	} else {
 		echo mysqli_error($con);	
 	}

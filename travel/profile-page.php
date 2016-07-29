@@ -12,7 +12,7 @@ if(!isset($_SESSION[''])){
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Green Wheels | <?php  ?></title>
+<title>Green Wheels | User Profile</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel, Sri Lanka, Journey, Adventure" />
@@ -43,11 +43,11 @@ if(!isset($_SESSION[''])){
 			<li class="prnt"><a href="javascript:window.print()">Print/SMS Ticket</a></li>
 				
 		</ul>
-		<ul class="tp-hd-rgt wow "> 
-			<li class="tol">Toll Number : 123-4568790</li>				
-			<li class="sig"><a href="#" data-toggle="modal" data-target="#myModal" >Sign Up</a></li> 
-			<li class="sigi"><a href="#" data-toggle="modal" data-target="#myModal4" >/ Sign In</a></li>
-        </ul>
+		<ul class="tp-hd-rgt wow "> 	
+            <form action="src/logout.php" method="post">
+				<input class="btn small" type="submit" name="submit" id="submit" value="LogOut">
+                </form>
+		</ul>
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -115,6 +115,9 @@ if(!isset($_SESSION[''])){
 	<div class="container">
 		<h1 class="wow zoomIn " style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel & Hotels</h1>
 	</div>
+</div>
+<div class="clearfix" style="padding-top:20px;">
+
 </div>
 <div class="rooms">
 	<div class="container">
@@ -313,10 +316,10 @@ if(!isset($_SESSION[''])){
 											<div class="login-right">
 												<form>
 													<h3>Create your account </h3>
-													<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-													<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-													<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-													<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+													<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+													<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required>
+													<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required>	
+													<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
 													<input type="submit" value="CREATE ACCOUNT">
 												</form>
 											</div>
@@ -350,8 +353,8 @@ if(!isset($_SESSION[''])){
 									<div class="login-right">
 										<form>
 											<h3>Signin with your account </h3>
-											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required>	
+											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
 											<h4><a href="#">Forgot password</a></h4>
 											<div class="single-bottom">
 												<input type="checkbox" id="brand" value="">
@@ -382,13 +385,13 @@ if(!isset($_SESSION[''])){
 										<h4>HOW CAN WE HELP YOU</h4>
 											<ul>
 												<li class="na-me">
-													<input class="name" type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+													<input class="name" type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
 												</li>
 												<li class="na-me">
-													<input class="Email" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+													<input class="Email" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required>
 												</li>
 												<li class="na-me">
-													<input class="number" type="text" value="Mobile Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile Number';}" required="">
+													<input class="number" type="text" value="Mobile Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile Number';}" required>
 												</li>
 												<li class="na-me">
 													<select id="country" onchange="change_country(this.value)" class="frm-field required sect">
@@ -409,7 +412,7 @@ if(!isset($_SESSION[''])){
 													</select>
 												</li>
 												<li class="descrip">
-													<input class="special" type="text" value="Write Description" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Write Description';}" required="">
+													<input class="special" type="text" value="Write Description" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Write Description';}" required>
 												</li>
 													<div class="clearfix"></div>
 											</ul>
