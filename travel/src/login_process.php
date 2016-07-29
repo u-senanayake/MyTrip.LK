@@ -15,7 +15,17 @@ if(isset($_POST['login'])){
 			if($pwd == $pd){
 				$_SESSION['email'] = $email;
 				$_SESSION['type'] = $type;
-				header('Location:../profile-page.php');
+				if($type == "guide"){
+					header('Location:../guide-profile-page.php');
+				} else if($type == "transport"){
+					header('Location:../transport-profile-page.php');
+				} else if($type == "restaurant"){
+					header('Location:../restaurant-profile-page.php');
+				} else if($type == "hotel"){
+					header('Location:../hotel-profile-page.php');
+				} else {
+					header('Location:../traveller-profile-page.php');
+				}
 			} else {
 				header('Location:../index.php');
 			}
