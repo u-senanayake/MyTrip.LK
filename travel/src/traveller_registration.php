@@ -23,7 +23,9 @@ if(isset($_POST['btn'])){
 	$query = "INSERT INTO traveller VALUES ('".$nic."','".$fname."','".$lname."','".$country."','".$email."','".$contact."','".$travellerId."')";
 	$query2 = "INSERT INTO user VALUES ('".$email."','".$pwd."','traveller')";
 	if(mysqli_query($con, $query) && mysqli_query($con, $query2)){
-		header('Location:../profile-page.php');
+		$_SESSION['email'] = $email;
+		$_SESSION['type'] = "traveller";
+		header('Location:../traveller-profile-page.php');
 	} else {
 		echo mysqli_error($con);	
 	}

@@ -24,6 +24,8 @@ if(isset($_POST['btn'])){
 	$query = "INSERT INTO restaurant VALUES ('".$restId."','".$name."','".$contact."','".$address."','".$lat."','".$lon."','".$email."','".$area."')";
 	$query2 = "INSERT INTO user VALUES ('".$email."','".$pwd."','restaurant')";
 	if(mysqli_query($con, $query) && mysqli_query($con, $query2)){
+		$_SESSION['email'] = $email;
+		$_SESSION['type'] = "restaurant";
 		header('Location:../profile-page.php');
 	} else {
 		echo mysqli_error($con);	

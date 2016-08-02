@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Green Wheels | Hotel Registration</title>
+<title>TravelX.lk | Hotel Registration</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel, Sri Lanka, Journey, Adventure" />
@@ -51,11 +51,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="header">
 	<div class="container">
 		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.html">Green <span>Wheels</span></a>	
+			<a href="index.php">TravelX <span>.lk</span></a>	
 		</div>
 		<div class="bus wow fadeInUp animated" data-wow-delay=".5s">
-            <a href="index.html" class="buses active">BUSES</a>
-            <a href="hotels.html">HOTELS</a>
+           <div class="bus wow fadeInUp animated" data-wow-delay=".5s">
+            <a href="hotel-registration.php" class="buses active">HOTELS</a>
+            <a href="restaurant-registration.php">RESTAURANTS</a>
+            <a href="guide-registration.php" class="buses active">GUIDES</a>
+            <a href="transport-registration.php" class="buses active">TRANSPORT</a>
+        </div>
         </div>
 		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 
 			<li><i class="fa fa-lock"></i></li>
@@ -108,7 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--- banner ---->
 <div class="banner-1 ">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel & Hotels</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TravelX.lk - Best in Class for Travel & Hotels</h1>
 	</div>
 </div>
 <div class="agent">
@@ -253,7 +257,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Green Wheels . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 TravelX.lk . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
 	</div>
 </div>
 <!--- /copy-right ---->

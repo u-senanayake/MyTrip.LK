@@ -14,7 +14,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['type'])){
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Green Wheels | User Profile</title>
+<title>TravelX.lk | User Profile</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel, Sri Lanka, Journey, Adventure" />
@@ -41,7 +41,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['type'])){
 <div class="top-header">
 	<div class="container">
 		<ul class="tp-hd-lft wow ">
-			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
+			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
 			<li class="prnt"><a href="javascript:window.print()">Print/SMS Ticket</a></li>
 				
 		</ul>
@@ -58,12 +58,8 @@ if(isset($_SESSION['email']) && isset($_SESSION['type'])){
 <div class="header">
 	<div class="container">
 		<div class="logo wow ">
-			<a href="index.html">Green <span>Wheels</span></a>	
+			<a href="index.php">TravelX <span>.lk</span></a>	
 		</div>
-		<div class="bus wow fadeInUp animated" data-wow-delay=".5s">
-            <a href="index.html" class="buses active">BUSES</a>
-            <a href="hotels.html">HOTELS</a>
-        </div>
 		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 
 			<li><i class="fa fa-lock"></i></li>
             <li><div class="securetxt">SAFE &amp; SECURE<br> ONLINE PAYMENTS</div></li>
@@ -154,26 +150,21 @@ if(mysqli_num_rows($result) > 0){
 			</div>
 			
 			<div class="hotel-amenit " style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp;" >
-				<h4 class="sing">Hotel Amenities</h4>
+				<h4 class="sing">Places Visited</h4>
 				<ul>
-					<li>Travel Assistance</li>
-					<li>Parking Facility</li>
-					<li>Restaurant/Coffee Shop</li>
-					<li>Business Services</li>
-					<li>Free Internet</li>
-					<li>Internet</li>
-					<li>Room Service</li>
-					<li>Laundry Service</li>
-					<li>Health-Spa</li>
+					<li>Kandy</li>
+					<li>Kegalle</li>
+					<li>Colombo</li>
+					<li>Negombo</li>
 					<div class="clearfix"></div>
 				</ul>
 			</div>
 			<div class="hotel-police wow ">
-				<h4 class="sing">Hotel Policies</h4>
+				<h4 class="sing">User Travels</h4>
 				<p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
 			</div>
 			<div class="similar_hotel">
-				<h4 class="sing">Guides</h4>
+				<h4 class="sing">Photos Shared</h4>
 				<div class="hotl-top">
 					<div class="col-md-4 hotels-left wow ">
 						<a href="siglepage.html">
@@ -232,42 +223,42 @@ if(mysqli_num_rows($result) > 0){
 		<div class="col-md-6 footer-left wow">
 			<h3>Journey through</h3>
 				<ul>
-					<li><a href="index.html">Mahiyangana</a></li>
-					<li><a href="index.html">Colombo</a></li>
-					<li><a href="index.html">Kekirawa</a></li>
-					<li><a href="index.html">Lunugama</a></li>
-					<li><a href="index.html">Puttalam</a></li>
-					<li><a href="index.html">Maskaliya</a></li>
-					<li><a href="index.html">Nuware Eliya</a></li>
-					<li><a href="index.html">Kandy</a></li>
-					<li><a href="index.html">Badulla</a></li>
-					<li><a href="index.html">Unawatuna</a></li>
-					<li><a href="index.html">Jaffna</a></li>
-					<li><a href="index.html">Trincomalee</a></li>
-					<li><a href="index.html">Anuradhapura</a></li>
-					<li><a href="index.html">Mullaitivu</a></li>
-					<li><a href="index.html">Monaragala</a></li>
+					<li><a href="index.php">Mahiyangana</a></li>
+					<li><a href="index.php">Colombo</a></li>
+					<li><a href="index.php">Kekirawa</a></li>
+					<li><a href="index.php">Lunugama</a></li>
+					<li><a href="index.php">Puttalam</a></li>
+					<li><a href="index.php">Maskaliya</a></li>
+					<li><a href="index.php">Nuware Eliya</a></li>
+					<li><a href="index.php">Kandy</a></li>
+					<li><a href="index.php">Badulla</a></li>
+					<li><a href="index.php">Unawatuna</a></li>
+					<li><a href="index.php">Jaffna</a></li>
+					<li><a href="index.php">Trincomalee</a></li>
+					<li><a href="index.php">Anuradhapura</a></li>
+					<li><a href="index.php">Mullaitivu</a></li>
+					<li><a href="index.php">Monaragala</a></li>
 					<div class="clearfix"></div>
 				</ul>
 		</div>
 		<div class="col-md-6 footer-left wow ">
 			<h3>Guides found in</h3>
 				<ul>
-					<li><a href="index.html">Mahiyangana</a></li>
-					<li><a href="index.html">Colombo</a></li>
-					<li><a href="index.html">Kekirawa</a></li>
-					<li><a href="index.html">Lunugama</a></li>
-					<li><a href="index.html">Puttalam</a></li>
-					<li><a href="index.html">Maskaliya</a></li>
-					<li><a href="index.html">Nuware Eliya</a></li>
-					<li><a href="index.html">Kandy</a></li>
-					<li><a href="index.html">Badulla</a></li>
-					<li><a href="index.html">Unawatuna</a></li>
-					<li><a href="index.html">Jaffna</a></li>
-					<li><a href="index.html">Trincomalee</a></li>
-					<li><a href="index.html">Anuradhapura</a></li>
-					<li><a href="index.html">Mullaitivu</a></li>
-					<li><a href="index.html">Monaragala</a></li>
+					<li><a href="index.php">Mahiyangana</a></li>
+					<li><a href="index.php">Colombo</a></li>
+					<li><a href="index.php">Kekirawa</a></li>
+					<li><a href="index.php">Lunugama</a></li>
+					<li><a href="index.php">Puttalam</a></li>
+					<li><a href="index.php">Maskaliya</a></li>
+					<li><a href="index.php">Nuware Eliya</a></li>
+					<li><a href="index.php">Kandy</a></li>
+					<li><a href="index.php">Badulla</a></li>
+					<li><a href="index.php">Unawatuna</a></li>
+					<li><a href="index.php">Jaffna</a></li>
+					<li><a href="index.php">Trincomalee</a></li>
+					<li><a href="index.php">Anuradhapura</a></li>
+					<li><a href="index.php">Mullaitivu</a></li>
+					<li><a href="index.php">Monaragala</a></li>
 					<div class="clearfix"></div>
 				</ul>
 		</div>
@@ -287,7 +278,7 @@ if(mysqli_num_rows($result) > 0){
 				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn  " style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Green Wheels . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
+		<p class="wow zoomIn  " style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 TravelX.lk . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
 	</div>
 </div>
 <!--- /copy-right ---->

@@ -26,6 +26,8 @@ if(isset($_POST['btn'])){
 	$query = "INSERT INTO guide VALUES ('".$guideId."','".$nic."','".$fname."','".$lname."','".$email."','".$contact."','".$address."','".$area."')";
 	$query2 = "INSERT INTO user VALUES ('".$email."','".$password."','guide')";
 	if(mysqli_query($con, $query) && mysqli_query($con, $query2)){
+		$_SESSION['email'] = $email;
+		$_SESSION['type'] = "guide";
 		header('Location:../profile-page.php');
 	} else {
 		echo mysqli_error($con);	

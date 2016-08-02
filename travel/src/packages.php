@@ -110,6 +110,8 @@ include_once('../ssi/db.php');
 		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel & Hotels</h1>
 	</div>
 </div>
+
+        
 <?php
 if(isset($_POST['submit'])){
 	$budget = $_POST['budget'];
@@ -126,60 +128,79 @@ if(isset($_POST['submit'])){
 	$result = mysqli_query($con, $sql);
 	if(mysqli_num_rows($result) > 0){
 		?>
-        <div class="container">
-		<table class="table table-striped">
-         <tr>
-                <th>
-                Package Name
-                </th>
-                <th>
-                Package Budget
-                </th>
-                <th>
-                Package Duration
-                </th>
-                <th>
-                Locations
-                </th>
-                <th>
-                Check the Package
-                </th>
-                </tr>
-		<?php
+<div class="bus-btm">
+	<div class="container">
+		<ul>
+			<li class="trav"><a href="#">Package Name</a></li>
+			<li class="dept"><a href="#">Locations</a></li>
+			<li class="arriv"><a href="#">Package Duration</a></li>
+			<li class="fare"><a href="#">Package Budget</a></li>
+			<li class="seat"><a href="#"></a></li>
+				<div class="clearfix"></div>
+		</ul>
+	</div>
+</div>
+<!--- /bus-btm ---->
+<!--- bus-midd ---->
+<div style="width:200px;" class="bus-midd wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
+	<div class="container">
+	<!--- ul-first  ---->
+	
+		<ul class="first">
+			<?php
         while($row = mysqli_fetch_array($result)){
 			?>
-                <tr>
-                <td>
+			<li class="trav">
+				<div class="bus-ic">
+					<img src="../images/apura.png" class="img-responsive" alt="" >
+				</div>
+				<div class="bus-txt">
+					<h4>
                 <?php $pid = $row['package_id']; 
 				echo $pid;
-				?>
-                </td>
-                <td>
-                <?php echo $row['package_budget']; ?>
-                </td>
-                <td>
-                <?php echo $row['package_duration']; ?>
-                </td>
-                <td>
-                <?php 
+				?></h4>
+				</div>
+				<div class="clearfix"></div>
+			</li>
+			<li class="dept">
+				<div class="bus-ic1">
+					<i class="fa fa-clock-o"></i>
+				</div>
+				<div class="bus-txt1">
+					<h4><?php 
 				$query = "SELECT location.name FROM location INNER JOIN package ON location.location_id=package.location_id WHERE package.package_id='".$pid."'";
 				$re = mysqli_query($con, $query);
 				if(mysqli_num_rows($re) > 0){
 					while($r = mysqli_fetch_array($re)){
 						echo $r['name']."<br/>"; 	
 					}
-				} ?>
-                </td>
-                <td>
-                <input type="submit" value="VIEW">
-                </td>
-                </tr>
-            <?php
+				} ?></h4>
+				</div>
+				<div class="clearfix"></div>
+			</li>
+			<li class="arriv">
+				<div class="bus-txt2">
+					<h4><?php echo $row['package_duration']; ?></h4>
+				</div>
+			</li>
+			<li class="fare">
+				<div class="bus-txt4">
+					<h5><?php echo $row['package_budget']; ?></h4>
+				</div>
+			</li>
+			<li class="seat">
+				<div class="bus-txt3">
+					<input type="submit" value="VIEW" onClick="location.href = '../package.html'">
+				</div>
+				<div class="clearfix"></div>
+			</li>
+			<?php
 		}
 		?>
-        </table>
-		</div>
-        <?php
+		</ul>
+	</div>
+</div>
+<?php
 	} else {
 		echo "SORRY THERE ARE NO RESULTS FIND YOUR PATTERN";	
 	}
@@ -271,10 +292,10 @@ if(isset($_POST['submit'])){
 											<div class="login-right">
 												<form>
 													<h3>Create your account </h3>
-													<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-													<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-													<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-													<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+													<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+													<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required>
+													<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required>	
+													<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
 													<input type="submit" value="CREATE ACCOUNT">
 												</form>
 											</div>
@@ -308,8 +329,8 @@ if(isset($_POST['submit'])){
 									<div class="login-right">
 										<form>
 											<h3>Signin with your account </h3>
-											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
+											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required>	
+											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>	
 											<h4><a href="#">Forgot password</a></h4>
 											<div class="single-bottom">
 												<input type="checkbox" id="brand" value="">
@@ -340,13 +361,13 @@ if(isset($_POST['submit'])){
 										<h4>HOW CAN WE HELP YOU</h4>
 											<ul>
 												<li class="na-me">
-													<input class="name" type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+													<input class="name" type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
 												</li>
 												<li class="na-me">
-													<input class="Email" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+													<input class="Email" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required>
 												</li>
 												<li class="na-me">
-													<input class="number" type="text" value="Mobile Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile Number';}" required="">
+													<input class="number" type="text" value="Mobile Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile Number';}" required>
 												</li>
 												<li class="na-me">
 													<select id="country" onchange="change_country(this.value)" class="frm-field required sect">
@@ -367,7 +388,7 @@ if(isset($_POST['submit'])){
 													</select>
 												</li>
 												<li class="descrip">
-													<input class="special" type="text" value="Write Description" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Write Description';}" required="">
+													<input class="special" type="text" value="Write Description" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Write Description';}" required>
 												</li>
 													<div class="clearfix"></div>
 											</ul>

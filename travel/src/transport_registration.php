@@ -23,6 +23,8 @@ if(isset($_POST['btn'])){
 	$query = "INSERT INTO transport VALUES ('".$transportId."','".$name."','".$contact."','".$address."','".$email."')";
 	$query2 = "INSERT INTO user VALUES ('".$email."','".$pwd."','transport')";
 	if(mysqli_query($con, $query) && mysqli_query($con, $query2)){
+		$_SESSION['email'] = $email;
+		$_SESSION['type'] = "transport";
 		header('Location:../profile-page.php');
 	} else {
 		echo mysqli_error($con);	

@@ -785,6 +785,7 @@ i.fa.fa-gift{
     -ms-background-size: cover;
     -moz-background-size: cover;
     min-height:200px;
+    margin-bottom: 20px;
 }
 .banner-2 h1 {
     font-size: 50px;
@@ -878,7 +879,7 @@ i.fa.fa-gift{
    filter: alpha(opacity=0);
    opacity: 0;
    background: transparent;
-   margin: 130px 40px 0px 40px;
+   margin: 60px 40px 0px 40px;
    -webkit-transform: scale(10);
    -moz-transform: scale(10);
    -o-transform: scale(10);
@@ -1105,9 +1106,10 @@ span.glyphicon.glyphicon-eye-open, span.glyphicon.glyphicon-thumbs-up {
 .details-top {
     margin-top: 2em;
     box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.37);
+    padding-bottom: 20px;
 }
 .details-left {
-    padding-left: 0;
+    padding-left: 15px;
 }
 .details-right {
     padding: 2em 0;
@@ -1130,7 +1132,7 @@ span.glyphicon.glyphicon-eye-open, span.glyphicon.glyphicon-thumbs-up {
 /*-- /details --*/
 /*-- rooms --*/
 .rooms-top {
-    background: url(../images/7.jpg)no-repeat;
+    background: url(../images/Kevin_Pietersen1-small.png)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -1138,9 +1140,11 @@ span.glyphicon.glyphicon-eye-open, span.glyphicon.glyphicon-thumbs-up {
     -moz-background-size: cover;
     min-height: 390px;
     padding: 18em 0 0;
+    margin-bottom: 3em;
+}
 }
 .rom-info {
-    background: rgba(63, 132, 177, 0.79);
+    background-color: rgba(63, 132, 177, 0.79) !important;
     padding: 1em 2em;
 }
 .rom-info h3 {
@@ -1258,6 +1262,11 @@ h4.sing {
     font-size: 15px;
     line-height: 1.8em;
     color: #999;
+}
+
+.hotel-police h5 {
+    font-weight: bold;
+    margin-top: 10px;
 }
 .hotel-police {
     margin-bottom: 3em;
@@ -3077,6 +3086,7 @@ i.fa.fa-truck, i.fa.fa-user, i.fa.fa-ticket {
 .details-top h5 {
     font-size: 1.3em;
 }
+
 .lightbox .box {
     min-width: 545px;
     margin: 12% auto;
@@ -4367,6 +4377,28 @@ ul.set-1 {
 }
 .login-left {
     width: 77%;
+}
+}
+
+.details-top h3,.modal-body h2, .modal-body h3 {
+    color: #34ad00;
+    padding: 10px 0;
+}
+
+.details-left input[type="text"]   {
+        width: 95%;
+    color: #9E9E9E;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 10px;
+    border: 1px solid #9E9E9E;
+    -webkit-appearance: none;
+    margin-top: 10px;
+}
+@media (min-width: 768px){}
+.modal-dialog {
+    width: auto;
+    margin: 30px auto;
 }
 }
 /*-- responsive design --*/

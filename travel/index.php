@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Green Wheels | Home</title>
+<title>TravelX.lk | Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel, Sri Lanka, Journey, Adventure" />
@@ -34,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="top-header">
 	<div class="container">
 		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
+			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
 			<li class="prnt"><a href="javascript:window.print()">Print/SMS Ticket</a></li>
 				
 		</ul>
@@ -51,11 +51,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="header">
 	<div class="container">
 		<div class="logo wow fadeInDown animated" data-wow-delay=".5s">
-			<a href="index.html">Green <span>Wheels</span></a>	
+			<a href="index.php">TravelX <span>.lk</span></a>	
 		</div>
 		<div class="bus wow fadeInUp animated" data-wow-delay=".5s">
-            <a href="index.html" class="buses active">BUSES</a>
-            <a href="hotels.html">HOTELS</a>
+            <a href="hotel-registration.php" class="buses active">HOTELS</a>
+            <a href="restaurant-registration.php">RESTAURANTS</a>
+            <a href="guide-registration.php" class="buses active">GUIDES</a>
+            <a href="transport-registration.php" class="buses active">TRANSPORT</a>
         </div>
 		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 
 			<li><i class="fa fa-lock"></i></li>
@@ -106,9 +108,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!--- /footer-btm ---->
 <!--- banner ---->
-<div class="banner-2 ">
+<div class="banner-2">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> Green Wheels - Best in Class for Travel & Hotels</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TravelX.lk - Best in Class for Travel & Hotels</h1>
 	</div>
 </div>
 <div class="container">
@@ -126,7 +128,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="bnr-left">
 				<label class="inputLabel">Adventure type</label>
-                <select name="select2[]" size="1" multiple="multiple" tabindex="1">
+                <select name="select2[]" size="4" multiple="multiple" tabindex="1">
                     <option value="Adventure">Adventure</option>
                     <option value="Beach">Beach</option>
                     <option value="Relax">Relax</option>
@@ -354,42 +356,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="col-md-6 footer-left wow fadeInLeft animated" data-wow-delay=".5s">
 			<h3>Journey through</h3>
 				<ul>
-					<li><a href="index.html">Mahiyangana</a></li>
-					<li><a href="index.html">Colombo</a></li>
-					<li><a href="index.html">Kekirawa</a></li>
-					<li><a href="index.html">Lunugama</a></li>
-					<li><a href="index.html">Puttalam</a></li>
-					<li><a href="index.html">Maskaliya</a></li>
-					<li><a href="index.html">Nuware Eliya</a></li>
-					<li><a href="index.html">Kandy</a></li>
-					<li><a href="index.html">Badulla</a></li>
-					<li><a href="index.html">Unawatuna</a></li>
-					<li><a href="index.html">Jaffna</a></li>
-					<li><a href="index.html">Trincomalee</a></li>
-					<li><a href="index.html">Anuradhapura</a></li>
-					<li><a href="index.html">Mullaitivu</a></li>
-					<li><a href="index.html">Monaragala</a></li>
+					<li><a href="index.php">Mahiyangana</a></li>
+					<li><a href="index.php">Colombo</a></li>
+					<li><a href="index.php">Kekirawa</a></li>
+					<li><a href="index.php">Lunugama</a></li>
+					<li><a href="index.php">Puttalam</a></li>
+					<li><a href="index.php">Maskaliya</a></li>
+					<li><a href="index.php">Nuware Eliya</a></li>
+					<li><a href="index.php">Kandy</a></li>
+					<li><a href="index.php">Badulla</a></li>
+					<li><a href="index.php">Unawatuna</a></li>
+					<li><a href="index.php">Jaffna</a></li>
+					<li><a href="index.php">Trincomalee</a></li>
+					<li><a href="index.php">Anuradhapura</a></li>
+					<li><a href="index.php">Mullaitivu</a></li>
+					<li><a href="index.php">Monaragala</a></li>
 					<div class="clearfix"></div>
 				</ul>
 		</div>
 		<div class="col-md-6 footer-left wow fadeInRight animated" data-wow-delay=".5s">
 			<h3>Guides found in</h3>
 				<ul>
-					<li><a href="index.html">Mahiyangana</a></li>
-					<li><a href="index.html">Colombo</a></li>
-					<li><a href="index.html">Kekirawa</a></li>
-					<li><a href="index.html">Lunugama</a></li>
-					<li><a href="index.html">Puttalam</a></li>
-					<li><a href="index.html">Maskaliya</a></li>
-					<li><a href="index.html">Nuware Eliya</a></li>
-					<li><a href="index.html">Kandy</a></li>
-					<li><a href="index.html">Badulla</a></li>
-					<li><a href="index.html">Unawatuna</a></li>
-					<li><a href="index.html">Jaffna</a></li>
-					<li><a href="index.html">Trincomalee</a></li>
-					<li><a href="index.html">Anuradhapura</a></li>
-					<li><a href="index.html">Mullaitivu</a></li>
-					<li><a href="index.html">Monaragala</a></li>
+					<li><a href="index.php">Mahiyangana</a></li>
+					<li><a href="index.php">Colombo</a></li>
+					<li><a href="index.php">Kekirawa</a></li>
+					<li><a href="index.php">Lunugama</a></li>
+					<li><a href="index.php">Puttalam</a></li>
+					<li><a href="index.php">Maskaliya</a></li>
+					<li><a href="index.php">Nuware Eliya</a></li>
+					<li><a href="index.php">Kandy</a></li>
+					<li><a href="index.php">Badulla</a></li>
+					<li><a href="index.php">Unawatuna</a></li>
+					<li><a href="index.php">Jaffna</a></li>
+					<li><a href="index.php">Trincomalee</a></li>
+					<li><a href="index.php">Anuradhapura</a></li>
+					<li><a href="index.php">Mullaitivu</a></li>
+					<li><a href="index.php">Monaragala</a></li>
 					<div class="clearfix"></div>
 				</ul>
 		</div>
@@ -409,7 +411,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a class="googleplus" href="#"><span>Google+</span></a></li>
 			</ul>
 		</div>
-		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 Green Wheels . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
+		<p class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">© 2016 TravelX.lk . All Rights Reserved | Design by  <a href="http://azeemullah.com/" target="_blank">zPOKOin</a> </p>
 	</div>
 </div>
 <!--- /copy-right ---->
@@ -439,7 +441,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                                     <input name="nic" type="text" value="NIC/PASSPORT" >
 													<input name="contact" type="text" value="Mobile number" >
                                                     <input name="country" type="text" value="Country" >
-													<input name="email" type="text" value="Email id" >	
+													<input name="email" type="text" value="Email" >	
 													<input name="password" type="password" value="Password" >	
 													<input name="btn" id="btn" type="submit" value="REGISTER">
 												</form>
