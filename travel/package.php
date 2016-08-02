@@ -30,11 +30,65 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--//end-animate-->
 </head>
 <body>
+
+
+<script type="text/javascript">
+
+
+packageProcess("package 1");
+
+			    function packageProcess(a){
+
+			    	
+
+
+			    		
+
+
+      					var packageName="package 1";
+
+
+			      
+             			$.ajax({
+
+		                    type: 'POST',
+		                    url: 'packageControll.php',
+		                    data: 'packageName='+packageName,
+		                    dataType: 'html',
+		                    cache: false,
+		                    success: function(result) {
+		                          
+
+
+		                          document.getElementById("details-top").innerHTML = result;
+
+
+		                       // alert(result)
+		    
+		                    },
+			
+                    	});
+
+
+     
+     
+ 				}
+			    	
+
+
+
+</script>
+
+<div id="testDisplay"></div>
+
+
+
+
 <!-- top-header -->
 <div class="top-header">
 	<div class="container">
 		<ul class="tp-hd-lft wow ">
-			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
+			<li class="hm" ><a href="index.html"><i class="fa fa-home"></i></a></li>
 			<li class="prnt"><a href="javascript:window.print()">Print/SMS Ticket</a></li>
 				
 		</ul>
@@ -54,7 +108,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<a href="index.html">Green <span>Wheels</span></a>	
 		</div>
 		<div class="bus wow fadeInUp animated" data-wow-delay=".5s">
-            <a href="index.html" class="buses active">BUSES</a>
+            <a href="index.html" class="buses active" >BUSES</a>
             <a href="hotels.html">HOTELS</a>
         </div>
 		<div class="lock fadeInDown animated" data-wow-delay=".5s"> 
@@ -111,10 +165,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<h1 class="wow "> Green Wheels - Best in Class for Travel & Hotels</h1>
 	</div>
 </div>
+
+
+
 <div class="details">
 	<div class="container">
-		<div class="details-top">
-			<div class="col-md-4 details-left ">
+		<div id="details-top" class="details-top">
+			<!-- <div class="col-md-4 details-left ">
 				<h3>Location</h3>
 				<a href="#" data-toggle="modal" data-target="#locationer"><img src="images/c5.jpg" class="img-responsive" alt=""></a>
 			</div>
@@ -143,10 +200,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h3>Cost</h3>
 				<h5>USD 700</h5>
 			</div>
-			<div class="clearfix"></div>
+			<div class="clearfix"></div> -->
+
+
+
+
+
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
 <!--- footer-top ---->
 <div class="footer-top">
 	<div class="container">
