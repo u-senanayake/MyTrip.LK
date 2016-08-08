@@ -1,5 +1,0 @@
-/* line 2, ../../scss/base/Reset.scss */
-input[type='text']:focus,
-select:focus {
-  outline: none !important;
-}

@@ -1,8 +1,0 @@
-Create 
-$ crosswalk-app create lk.udayanga.test
-
-Build
-$ crosswalk-pkg <folder with manifest.json>
-
-Install
-$ adb install -r com.abc.myapp-0.1-debug.armeabi-v7a.apk
