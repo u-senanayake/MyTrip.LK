@@ -4,6 +4,7 @@ Author URL: http://azeemullah.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -95,6 +96,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="agent.html">Agent Registration</a></li>
 								<li><a href="terms.html">Terms of Use</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="index.php" >Udayanga</li>
 								<li>Need Help?<a href="#" data-toggle="modal" data-target="#myModal3"> / Write Us </a>  </li>
 								<div class="clearfix"></div>
 						</ul>
